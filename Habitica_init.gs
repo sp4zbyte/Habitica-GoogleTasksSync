@@ -36,7 +36,8 @@ function buildRequest(method, url, payload){
      "method" : method,
      "headers" : {
        "x-api-user" : PropertiesService.getScriptProperties().getProperty("habitica_userid"), 
-       "x-api-key" : PropertiesService.getScriptProperties().getProperty("habitica_apikey")
+       "x-api-key" : PropertiesService.getScriptProperties().getProperty("habitica_apikey"),
+       "x-client" : PropertiesService.getScriptProperties().getProperty("habitica_client")
      },
      "muteHttpExceptions": true
    }
@@ -45,7 +46,8 @@ function buildRequest(method, url, payload){
      "method" : method,
      "headers" : {
        "x-api-user" : PropertiesService.getScriptProperties().getProperty("habitica_userid"), 
-       "x-api-key" : PropertiesService.getScriptProperties().getProperty("habitica_apikey")
+       "x-api-key" : PropertiesService.getScriptProperties().getProperty("habitica_apikey"),
+       "x-client" : PropertiesService.getScriptProperties().getProperty("habitica_client")
      },
      "payload": payload,
      "muteHttpExceptions": true
