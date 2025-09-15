@@ -23,7 +23,7 @@ Limited to 100 tasks per tasklist theoretically, but you'll hit the Google Apps 
 
 5. Go to "Project Settings" (gear icon at the right) and populate the "Script Properties" as follows:
    * `habitica_apikey`, `habitica_userid`, and `habitica_apiurl` are self-explanatory
-   * `habitica_client` is your habitica userid+'-'+string name of script (e.g. XXXXXXXXXXXX-gtask) 
+   * `habitica_client` is your habitica userid+'-'+string name of script (e.g. XXXXXXXXXXXX-gtask) this is not shown in the graphic
    * `delay_in_seconds` forces the script to take a break between requests, so that the Habitica API won't kick you out for making too many requests at a time
    * `gtasks_maxresults` limits the amount of tasks you can get per tasklist in GTasks. you can theoretically increase this number...
    * `verbose` makes the log more chatty. not implemented.
